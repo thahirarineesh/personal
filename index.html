@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Thahira Rineesh</title>
+		<meta charset="utf-8" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+       <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="/css/bootstrap.css">
+
+        <script>
+          function validate(){
+            var name=document.getElementById("name").value;
+	        var email=document.getElementById("email").value;
+	        var subject=document.getElementById("subject").value;
+	        var message=document.getElementById("message").value;
+            var reg =/^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+	        var lettersRegex = /^[A-Za-z]+$/;
+           var result=reg.test(email);
+	       var res=lettersRegex.test(name);
+
+	       if(res==false ){
+		   alert("Must be a character");
+		    document.form.name.focus();
+		   return false;
+	       } 
+	
+	       if(result==false){
+		   alert("invalid Email Id");
+		   document.form.email.focus();
+		   return false;
+	        }
+
+	       if(subject==""){
+		   alert("Must have subject");
+		   document.form.subject.focus();
+		   return false;
+	       }
+
+	      if(message==""){
+		  alert("Must have a message");
+		  document.message.name.focus();
+		  return false;
+	      }
+          return true;
+	      }
+	    </script>		
+    </head>
+	<body class="is-preload" >
+
+		   <!-- Nav -->
+
+           <nav class="navbar navbar-expand-lg  fixed-top bg-secondary">
+			<div class="container-fluid">
+			  <a class="navbar-brand text-bg-success" href="#">its me </a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse  " id="navbarNav">
+				<ul class="navbar-nav  ">
+				  <li class="nav-item ">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#about">About me</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#portfolio">Projects</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#skills">My Skills</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#services">Services</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				  </li>
+				  
+				</ul>
+			  </div>
+			</div>
+		  </nav>   
+
+		 <!-- Home -->
+			<article id="home" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="images/WhatsApp Image .jpg" style="border-radius: 100%;"   alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1>Hi. I'm <strong>Thahira Rineesh</strong>.</h1>
+							</header>
+							<p>I am a  <strong>Data Analyst</strong></p>
+							<a href="#about" class="button large scrolly">Learn more about me</a>
+						</div>
+					</div>
+				</div>
+			</article>
+
+		   <!-- Work -->
+			<article id="about" class="wrapper style2">
+				<div class="container">
+					<header>
+						<h1><b>About Me</b></h1>
+						<p>This is a brief introduction about me</p>
+					</header>
+					<div class="row aln-center" >
+                      <p><b>Iam Thahira Rineesh From Thrissur.I have Completed my graduation in Bsc Statistics in the year 2017 from Vimala College ,Thrissur. I have done diploma course in statistical computing in Data Analysis along with my degree.Also done Master program in Data Science in 2022.i have 3 internship experience as Junior Python Developer at inmakes infotech.Currently I am more intrested in programming languages.</b></p>
+
+					</div>
+					<footer>
+						
+						<a href="#portfolio" class="button large scrolly">See some of my projects</a>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Portfolio -->
+	
+
+
+	   <article id="portfolio" class="wrapper style" >
+		 <div class="container" >
+			 <header>
+				 <h2><b>My Projects</b></h2>
+			 </header>
+			 <div class="row aln-center" >
+				   <div class="col-4 col-12-medium" >
+					  <section class="project" >
+						 <h3><a href="#">E-commerce project</a></h3>
+					     <p>E-commerce site is to sell goods online. This project deals with developing an website for Online Product Sale. </p>
+						 <ul class="actions">
+							 <li><a href="https://amaanrineesh.pythonanywhere.com/shopapp/" class="button style1">Click to visit my project  </a></li>
+						 </ul>
+						</section>
+				    </div>
+			        <div class="col-4 col-12-medium" >
+					   <section class="project" >
+						  <h3><a href="#">Movie-App </a></h3>
+						  <p>Movie-App , in this project we can add movie in movie list and also show the introduction about movie</p>
+					      <ul class="actions">
+							 <li><a href="https://zararinu.pythonanywhere.com/" class="button style1">Click to visit my project  </a></li>
+						  </ul>
+					    </section>
+				    </div>
+				    <div class="col-4 col-12-medium" >
+					    <section class="project" >
+						    <h3><a href="#">Todo-App</a></h3>
+						    <p>Todo-App , in this project we can feed the task with date and time.It will helps to lidt our task</p>
+						    <ul class="actions">
+							    <li><a href="http://thahira.pythonanywhere.com/" class="button style1">Click to visit my project </a></li>
+						    </ul>
+					    </section>
+				    </div>
+				</div>
+	        </div>
+	   </article>
+
+			
+
+
+     <!-- skills -->
+
+	    <article id="skills" class="wrapper style4" >
+		    <div class="container" >
+				<header><h2 >My Skills</h2>
+				</header>
+			    <div class="container">
+					<div class="skills python">
+						<a style="float: left;">Python</a>95%
+					</div>
+			    </div>
+		        <br>
+			    <div class="container" >
+					<div class="skills html">
+						<a style="float: left;">Html</a>90%
+					</div>
+			    </div>
+				<br>	
+			    <div class="container">
+					<div class="skills css">
+						<a style="float: left;">CSS</a> 85%
+					</div>
+			    </div>
+			    <br>	
+				<div class="container">
+					<div class="skills js">
+						<a style="float: left;">JavaScript</a>80%
+					</div>
+			    </div>
+			    <br>
+			    <div class="container">
+					<div class="skills bootstrap">
+						<a style="float: left;">Bootstrap</a>80%
+					</div>
+				</div>
+			</div>
+		</article>
+
+      <!-- services -->
+		
+	   <article id="services" class="wrapper style" >
+		    <div class="container">
+			   <header><h2>My Services</h2>
+			   </header>
+			    <div class="row aln-center">
+					<div class="col-4 col-12-medium">
+					  <section class="highlight">
+					     <a href="#" class="image featured"><img src="images/WebDesign (1).webp" alt="" /></a>
+					     <h3><a href="#">Web Design</a></h3>
+					      <p>Designing  websites for businesses and clients</p>
+						  <br>
+						</section>			
+					</div>
+				    <div class="col-4 col-12-medium">
+					   <section class="highlight">
+					     <a href="#" class="image featured"><img src="images/data.webp"   alt="" /></a>
+					      <h3><a href="#">Data Analyse</a></h3>
+					      <p>Analysing Datas ,prediction -businesses and clients</p>
+						  <br>
+					    </section>
+				    </div>
+					<div class="col-4 col-12-medium">
+						<section class="highlight">
+							<a href="#" class="image featured"><img src="images/Statistics-Banner-Image.webp"  alt="" /></a>
+							<h3><a href="#">Statistics</a></h3>
+							<p>We provide statistics Tuition for all</p>
+							<br>
+						</section>
+					</div>
+		        </div>
+		    </div>
+		</article>
+						
+			
+      <!-- Contact -->
+	  <article id="contact" class="wrapper style4" style="background-color: white;">
+		    <div class="container medium">
+				<header>
+					<h2 style="color: black;">Contact Me</h2>
+				</header>
+				<div class="row">
+					<div class="col-12">
+						<form id="submit-form" method="post" action="" onsubmit="return validate()" >
+							<input type="text" name="name" id="name" placeholder="Enter your Name" required /><br>
+							<input type="text" name="email" id="email" placeholder="Email"  required/><br>
+							<input type="text" name="subject" id="subject" placeholder="Subject" required /><br>
+							<textarea name="message" id="message" placeholder="Message" required></textarea><br>
+							<div class="col-12">
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="reset" value="Clear Form" class="alt" /></li>
+								</ul>
+							</div>
+								
+						</form>
+					</div>
+					<div class="col-12">
+						<hr />
+						<h3 style="color: black;">Find me on ...</h3>
+						
+							<a href="https://www.linkedin.com/feed/" class="icon brands fa-linkedin-in" style="color: blue;">LinkedIn</a><br>
+							<a href="https://github.com/thahirarineesh" class="icon brands fa-github" style="color: blue;">Github</a>
+						
+						<hr />
+					</div>
+				</div>
+				<footer>
+					<ul id="copyright">
+							<li>Designed By:Thahira Rineesh</li>
+					</ul>
+				</footer>
+		   </div>
+		</article>
+
+     <script>
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbyDOgEH0s1SP3U-MZcqQlxPzcYT6b0WS1_-VQjoBLhowCGRGDpZdnRUrwrHAAWYVrgr/exec'
+
+      const form = document.forms['submit-form']
+
+     form.addEventListener('submit', e => {
+     e.preventDefault()
+     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+     .then(response => alert("Thank you! your form is submitted successfully." ))
+     .then(() => { window.location.reload(); })
+     .catch(error => console.error('Error!', error.message))
+     })
+     </script>
+
+
+
+
+ 
+			
+				
+
+		<!-- Scripts -->
+			 <script src="assets/js/jquery.min.js"></script>
+			<!-- <script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>  -->
+
+	</body>
+</html>
